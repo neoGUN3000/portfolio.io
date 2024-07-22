@@ -22,8 +22,7 @@ for(let i = 0; i < heading.length; i++){
 for(let i = 0; i < nav_buttons.length; i++){
   nav_buttons[i].addEventListener('click', scrollIntoViewport);
 }
-
-
+window.addEventListener('DOMContentLoaded', scrollIntoViewport());
 
 function  scrollIntoViewport(){
 for(let i = 0; i < nav_buttons.length; i++)
@@ -44,3 +43,8 @@ for(let i = 0; i < pages.length; i++){
     });
 
 }
+let get_started = document.getElementById('get_started').addEventListener('click', () => {
+  pages[1].scrollIntoView({ behavior: 'smooth'});
+})
+
+
