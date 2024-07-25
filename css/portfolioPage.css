@@ -1,0 +1,4 @@
+.portfolio__page{
+    border-left: var(--blueBr);
+    border-right: var(--redBr);
+}
