@@ -1,5 +1,5 @@
 
-let nav_buttons = document.getElementsByName('scroll_btn');
+let nav_buttons = document.getElementsByClassName('.navigation-btn');
 let pages = document.querySelectorAll('.page');
 let heading = document.querySelectorAll('.heading');
 // называть множиство множиством 
@@ -8,11 +8,6 @@ let heading = document.querySelectorAll('.heading');
 
 // _____mouse___on____HEADING____
 
-for(let i = 0; i < heading.length; i++){
-  heading[i].addEventListener('click', () => {
-    heading[i].scrollIntoView({ behavior: 'smooth' })} );
-
-}
 
 
 
@@ -22,7 +17,7 @@ for(let i = 0; i < heading.length; i++){
 for(let i = 0; i < nav_buttons.length; i++){
   nav_buttons[i].addEventListener('click', scrollIntoViewport);
 }
-window.addEventListener('DOMContentLoaded', scrollIntoViewport());
+// window.addEventListener('DOMContentLoaded', scrollIntoViewport());
 
 function  scrollIntoViewport(){
 for(let i = 0; i < nav_buttons.length; i++)
@@ -36,13 +31,7 @@ for(let i = 0; i < nav_buttons.length; i++)
 
 
 
-for(let i = 0; i < pages.length; i++){
-  pages[i].addEventListener('mouseover', () => {
-    nav_buttons[i].checked = true;
-    
-    });
 
-}
 let get_started = document.getElementById('get_started').addEventListener('click', () => {
   pages[1].scrollIntoView({ behavior: 'smooth'});
 })
