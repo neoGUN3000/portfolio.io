@@ -55,11 +55,34 @@
     .skills-list{
         display: flex;
         flex-direction: column;
+        row-gap:50px ;
     }
     .skill{
-        width: 100vw;
-        z-index: 999;
+        width: 20vw;
+        z-index: 999; 
+        height: auto;
+        flex-direction:row;
+       
+        
 
     }
+    .skill:nth-child(1){
+       
+        
+    }
+    .skill .skill-icon{
+        width: 45%;
+
+    }
+    .skill span{
+        font-size: 100%;
+        margin-left: 50%;
+       
+    }
+    .skill :where(.skill-icon, span){
+        position: absolute;
+        left: -200%;
+    }
+
 }
  
