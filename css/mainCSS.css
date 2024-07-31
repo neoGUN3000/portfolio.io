@@ -22,6 +22,27 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.main::after{
+    content: 'Oleksii Ilchenko';
+    display: inline-block;
+    z-index: 999;
+    color:white ;
+    position: absolute;
+    writing-mode: vertical-lr;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: var(--middle-fs);
+    border: 1px solid red;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    left: -1px;
+    padding: 5px;
+    letter-spacing: 3px;
+    word-spacing: 4px;
+    font-weight: var(--middle-fw);
+    cursor: pointer;
+    text-transform: uppercase;
+}
 
 .main::-webkit-scrollbar{
     display: none;

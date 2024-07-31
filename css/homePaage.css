@@ -220,15 +220,13 @@
 
 
 .get-start__btn{
-    width: var(--cage-width);
+    width: 780px;
     height: var(--cage-height);
     cursor: pointer;
     font-weight: var(--middle-fw);
     font-size: var(--regular-fs);
     font-family: var(--buttons-font);
     text-transform: uppercase;
-    text-shadow: 0 0 3px rgb(255, 255, 255);
-    box-shadow: 0 0 5px red;
     z-index: 1000;
     position:absolute;
     top: 85%;
@@ -236,7 +234,8 @@
     background: linear-gradient(356deg, rgba(255,0,0,0.57) 0%, rgba(0,18,252,0.51) 100%);
     animation: gradient-animation 2s infinite alternate;
     background-size: 200% 200%;
-   
+    -webkit-text-fill-color: aliceblue;
+    border-radius: 10px;
 }
 
 @keyframes gradient-animation {
@@ -262,7 +261,7 @@
   }
 
 .get-start__btn:hover{
-transform: scale(1.1);
+
 }
 
 .skills-list{
@@ -348,7 +347,7 @@ transform: scale(1.1);
     background: linear-gradient(97deg, rgba(255, 0, 0, 0.445) 0%, rgba(9,21,129,1) 51%, rgba(252, 0, 0, 0.527) 100%);
     animation: gradient-animation 3s infinite alternate;
     background-size: 200% 200%;
-    
+    border-radius: 10px;
 }
 .tool-box__heading{
     position: absolute;

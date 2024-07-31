@@ -1,39 +1,30 @@
+let nav_buttons = document.getElementsByClassName('navigation-btn');
+let nav_buttonsArr = Array.from(nav_buttons);
 
-let nav_buttons = document.getElementsByClassName('.navigation-btn');
 let pages = document.querySelectorAll('.page');
+let pagesArr = Array.from(pages);
+
 let heading = document.querySelectorAll('.heading');
-// называть множиство множиством 
-
-
-
-// _____mouse___on____HEADING____
-
 
 
 
 
 // ______________CLICK__BTN__SCROLL___TO__PAGE___
 
-for(let i = 0; i < nav_buttons.length; i++){
-  nav_buttons[i].addEventListener('click', scrollIntoViewport);
+for(let i = 0; i < nav_buttonsArr.length; i++){
+  nav_buttonsArr[i].addEventListener('click', () => {
+    pagesArr[i].scrollIntoView({ behavior: 'smooth'});
+  });
 }
-// window.addEventListener('DOMContentLoaded', scrollIntoViewport());
 
-function  scrollIntoViewport(){
-for(let i = 0; i < nav_buttons.length; i++)
-    if(nav_buttons[i].checked){
-       
-      pages[i].scrollIntoView({ behavior: 'smooth' });
-      
-    }
-}
+
+
+
+
 // ____________BLACK____BTN_____WHEN_____PAGE___IS___INTO___VIEW__
-
 
 
 
 let get_started = document.getElementById('get_started').addEventListener('click', () => {
   pages[1].scrollIntoView({ behavior: 'smooth'});
 })
-
-
