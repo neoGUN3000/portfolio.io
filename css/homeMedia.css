@@ -1,0 +1,65 @@
+@media (max-width: 800px) {
+    body{
+        animation: gradient-animation3 30s infinite alternate;
+        background-size: 300% 300%;
+       
+
+   }
+   @keyframes gradient-animation3 {
+    
+    0% {
+        background-position: 0% 0%;
+    }
+    25% {
+        background-position: 50% 50%;
+    }
+    50% {
+        background-position: 80% 80%;
+    }
+    60% {
+        background-position: 100% 100%;
+    }
+    75% {
+        background-position: 50% 50%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+    .home__page{
+        height: 100dvh;
+        grid-template-columns:100vw;
+        backdrop-filter: blur(29px);
+        overflow-x: hidden;
+        overflow-y: scroll;
+        box-shadow: none;
+
+    }
+    :is(.heading, .sub-heading){
+
+        font-size: 50%;
+        position: absolute;
+        left: 50%;
+     
+    }
+    .heading{
+        transform: translateX(-50%);
+    }
+    .sub-heading{
+        
+    }
+    .home-heading{
+        width: 100%;
+    }  
+    .skills-list{
+        display: flex;
+        flex-direction: column;
+    }
+    .skill{
+        width: 100vw;
+        z-index: 999;
+
+    }
+}
+ 
