@@ -109,6 +109,7 @@ body{
     border-bottom-left-radius: 50px;
 
 }
+
 .navigation-btn{
     background-color: rgb(255, 0, 0);
     width: 10px;
@@ -120,7 +121,24 @@ body{
     animation: nav-gradient-animation 3s infinite alternate;
     background-size: 500% 500%;
     cursor: pointer;
+    
 }
+:is(#rb1, #rb2, #rb3){
+    position: absolute;
+    visibility: 0;
+    opacity: 0;
+    z-index: -10;
+}
+#rb1:checked ~ .rb1{
+background-color: aliceblue;
+}
+#rb2:checked ~ .rb2{
+background-color: aliceblue;
+}
+#rb3:checked ~ .rb3{
+background-color: aliceblue;
+}
+
 
 @keyframes nav-gradient-animation{
   
@@ -142,5 +160,10 @@ width: 80%;
 }
 .nav-section__line-wrapper:hover .nav-section__line .navigation-btn{
 border-radius: 50%;
-transform: scale(1.9);
+transform: scale(1.8);
+}
+.gggg{
+    transition: .4s;
+    background-color: #00ff22;
+    transform: scale(1.5);
 }

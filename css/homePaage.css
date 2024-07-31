@@ -11,9 +11,8 @@
 }
 
 
-
 .home-heading{
-   
+
     top: 30px;
     left: 50%;   
     transform: translateX(-50%);
@@ -283,7 +282,6 @@ transform: scale(1.1);
     display: flex;
     flex-direction: column;
     list-style: none; 
-    height: 300px;
     align-items:center ;
    justify-content: space-around;
 }
