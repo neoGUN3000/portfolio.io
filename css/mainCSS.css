@@ -22,7 +22,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.main::after{
+/* .main::after{
     content: 'Oleksii Ilchenko';
     display: inline-block;
     z-index: 999;
@@ -42,7 +42,7 @@ body{
     font-weight: var(--middle-fw);
     cursor: pointer;
     text-transform: uppercase;
-}
+} */
 
 .main::-webkit-scrollbar{
     display: none;
@@ -107,57 +107,56 @@ body{
 
 /* ______________btns____to____see____where___the__User__is */
 .nav-section__line-wrapper{
-   width: 50px;
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    z-index: 888;
-    display: flex;
-    justify-content: end;
+
 
 }
 .nav-section__line{
-    width: 50%;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    transition: .4s;
-    
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
+z-index: 999;
+display: flex;
+flex-direction: column;
+align-items: center;
+border-top-left-radius: 5px;
+border-bottom-left-radius: 5px;
+position: absolute;
+top: 50%;
+right: 0;
+transform: translateY(-50%);
+background-color: #ff5202d2;
+width: 30px;
+height: 300px;
+
 
 }
 
 .navigation-btn{
-    background-color: rgb(255, 0, 0);
-    width: 10px;
-    height: 10px;
-    display: inline-block;
-    z-index: 999;
-    transition: .4s;
-    background: linear-gradient(97deg, rgba(255, 0, 0, 0.445) 0%, rgb(129, 9, 9) 51%, rgba(0, 109, 252, 0.527) 100%);
-    animation: nav-gradient-animation 3s infinite alternate;
-    background-size: 500% 500%;
-    cursor: pointer;
-    
+    margin: auto;
+transform: scale(-1);
+    text-transform: uppercase;
+    font-weight: 600;
+    color: rgb(2, 14, 131);
+writing-mode: vertical-lr;
+letter-spacing: 2px;
+transition: .4s;
+position: relative;
+bottom: 20px;
 }
+.navigation-btn:focus {
+    color: aqua;
+}
+
 :is(#rb1, #rb2, #rb3){
-    position: absolute;
-    visibility: 0;
-    opacity: 0;
-    z-index: -10;
+opacity: 0;
+visibility: hidden;
+z-index: -10;
 }
 #rb1:checked ~ .rb1{
-background-color: aliceblue;
+
 }
 #rb2:checked ~ .rb2{
-background-color: aliceblue;
+
 }
 #rb3:checked ~ .rb3{
-background-color: aliceblue;
+
 }
 
 
@@ -177,11 +176,10 @@ background-color: aliceblue;
       
   }
 .nav-section__line-wrapper:hover .nav-section__line {
-width: 80%;
+
 }
 .nav-section__line-wrapper:hover .nav-section__line .navigation-btn{
-border-radius: 50%;
-transform: scale(1.8);
+
 }
 .gggg{
     transition: .4s;

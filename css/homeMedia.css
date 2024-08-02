@@ -1,10 +1,10 @@
 @media (max-width: 800px) {
     body{
-        animation: gradient-animation3 30s infinite alternate;
-        background-size: 300% 300%;
+      
        
 
    }
+
    @keyframes gradient-animation3 {
     
     0% {
@@ -29,13 +29,15 @@
 
     .home__page{
         height: 100dvh;
-        grid-template-columns:100vw;
-        backdrop-filter: blur(29px);
+        grid-template-columns:100vw;    
         overflow-x: hidden;
         overflow-y: scroll;
         box-shadow: none;
-
+        background-color: #cc230d;
+    
     }
+
+
     :is(.heading, .sub-heading){
 
         font-size: 50%;
@@ -46,43 +48,62 @@
     .heading{
         transform: translateX(-50%);
     }
-    .sub-heading{
-        
-    }
-    .home-heading{
-        width: 100%;
-    }  
+ 
+      
     .skills-list{
         display: flex;
         flex-direction: column;
         row-gap:50px ;
+        user-select: none;
     }
     .skill{
         width: 20vw;
         z-index: 999; 
         height: auto;
         flex-direction:row;
-       
-        
-
-    }
-    .skill:nth-child(1){
-       
-        
+        margin: none;
+     
     }
     .skill .skill-icon{
-        width: 45%;
-
+        width: 50px;
     }
     .skill span{
         font-size: 100%;
-        margin-left: 50%;
-       
+        right: 130%;
+        
     }
-    .skill :where(.skill-icon, span){
+    .technologies{
+        font-size: calc(var(--regular-fs) - 4px);
+        row-gap:0px;
+        transform-origin: top ;
+        transform: rotateX(-90deg);
+        transition: .4s;
+    }
+    .technologies::after{
+        content: '';
+        height: 2px;
+        width: 100vw;
+        display: inline-block;
+        background: linear-gradient(97deg, rgba(255, 0, 0, 0.445) 0%, rgba(9,21,129,1) 51%, rgba(252, 0, 0, 0.527) 100%);
         position: absolute;
-        left: -200%;
+        margin-bottom: 90px;
     }
-
+    .skill :where(.skill-icon, span, .closer-opener){
+        position: absolute;
+        left: -190%;
+    }
+    .closer-opener{
+        display: inline-block;
+        width: 20px;
+        left: -80%;
+        transform: translateY(-10px);
+    }
+   :is( #skill__opener-closer1, #skill__opener-closer2, #skill__opener-closer3):checked ~ .technologies{
+        transform: rotateX(0deg);
+    }
+    :is( #skill__opener-closer1, #skill__opener-closer2, #skill__opener-closer3):checked + label{
+        transform: translateZ(90deg);
+        background-color: aliceblue;
+    }
 }
  
