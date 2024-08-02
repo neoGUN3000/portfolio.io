@@ -14,6 +14,7 @@ let heading = document.querySelectorAll('.heading');
 for(let i = 0; i < nav_buttonsArr.length; i++){
   nav_buttonsArr[i].addEventListener('click', () => {
     pagesArr[i].scrollIntoView({ behavior: 'smooth'});
+    pagesArr[i].classList.add('gggg');
   });
   
 }

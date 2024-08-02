@@ -108,7 +108,7 @@ body{
 /* ______________btns____to____see____where___the__User__is */
 .nav-section__line-wrapper{
 
-
+display: none;
 }
 .nav-section__line{
 z-index: 999;
@@ -132,17 +132,16 @@ height: 300px;
     margin: auto;
 transform: scale(-1);
     text-transform: uppercase;
-    font-weight: 600;
-    color: rgb(2, 14, 131);
+font-weight: 600;
+color: rgb(2, 14, 131);
 writing-mode: vertical-lr;
 letter-spacing: 2px;
 transition: .4s;
 position: relative;
 bottom: 20px;
+user-select: none;
 }
-.navigation-btn:focus {
-    color: aqua;
-}
+
 
 :is(#rb1, #rb2, #rb3){
 opacity: 0;
@@ -150,13 +149,13 @@ visibility: hidden;
 z-index: -10;
 }
 #rb1:checked ~ .rb1{
-
+    color: aqua;
 }
 #rb2:checked ~ .rb2{
-
+    color: aqua;
 }
 #rb3:checked ~ .rb3{
-
+    color: aqua;
 }
 
 
@@ -182,7 +181,6 @@ z-index: -10;
 
 }
 .gggg{
-    transition: .4s;
-    background-color: #00ff22;
-    transform: scale(1.5);
+    
+  
 }
