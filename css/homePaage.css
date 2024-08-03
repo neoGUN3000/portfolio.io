@@ -1,6 +1,6 @@
 .home__page{
 
-
+    height: 100dvh;
     width: 100vw;
     display: grid;
     grid-template-columns:minmax(700px, 90vw);

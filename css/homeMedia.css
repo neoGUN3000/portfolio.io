@@ -1,8 +1,6 @@
 @media (max-width: 800px) {
     body{
       
-       
-
    }
 
    @keyframes gradient-animation3 {
@@ -29,14 +27,14 @@
 .nav-section__line-wrapper{
     display: inline-block;
 }
+.get-start__btn{
+    display: none;
+}
     .home__page{
-        height: 100dvh;
-        grid-template-columns:100vw;    
-        overflow-x: hidden;
-        overflow-y: scroll;
+       
         box-shadow: none;
         background-color: #cc230d;
-    
+
     }
 
 

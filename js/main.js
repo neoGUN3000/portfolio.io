@@ -1,4 +1,4 @@
-let nav_buttons = document.getElementsByClassName('navigation-btn');
+let nav_buttons = document.getElementsByName('navigation-btn');
 let nav_buttonsArr = Array.from(nav_buttons);
 
 let pages = document.querySelectorAll('.page');
@@ -29,4 +29,9 @@ for(let i = 0; i < nav_buttonsArr.length; i++){
 
 let get_started = document.getElementById('get_started').addEventListener('click', () => {
   pages[1].scrollIntoView({ behavior: 'smooth'});
+ 
+  
 })
+
+let allPages = pagesArr[0].getBoundingClientRect();
+console.log(allPages);
